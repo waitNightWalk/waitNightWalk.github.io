@@ -442,10 +442,10 @@ L=\frac{1}{N} \sum_{i=1}^N \sum_{j \neq y_i} \max \left(0, f\left(x_i, W\right)_
 </ul>
 <script type="math/tex; mode=display">
 L=\frac{1}{N} \sum_{i=1}^N \sum_{j \neq y_i} \max \left(0, f\left(x_i, W\right)_j-f\left(x_i, W\right)_{y_i}+1 \right)+ \lambda R(W)</script><ul>
-<li><p>正则化惩罚项： $R(W)=\sum<em>k \sum_l W</em>{k, l}^2$ </p>
-<p>（我们总希望模型不要太复杂，过拟合的模型是没用的）</p>
-</li>
+<li>正则化惩罚项： <script type="math/tex; mode=display">
+R(W)=\sum_k \sum_l W_{k, l}^2</script></li>
 </ul>
+<p>  （我们总希望模型不要太复杂，过拟合的模型是没用的）</p>
 <h3 id="Softmax-分类器"><a href="#Softmax-分类器" class="headerlink" title="Softmax 分类器"></a>Softmax 分类器</h3><ul>
 <li><p>现在我们得到的是一个输入的得分值，但如果给我一个概率值更好</p>
 <p>如何将一个得分值转换成一个概率值呢？</p>
